@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  margin: 0 1rem;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#about figure {
+  margin: 0 auto;
+}
+#about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Skills Section */
+#skills {
+  margin-bottom: 2rem;
+}
+.skill {
+  margin: 1rem 0;
+}
+
+/* Projects Section */
+#projects {
+  margin-bottom: 2rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+#contact form input,
+#contact form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#contact form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+#contact form button:hover {
+  background: #555;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+footer .social a {
+  color: #fff;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+footer .social a:hover {
+  text-decoration: underline;
+}
+
+/* Back to Top Button */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+#back-to-top:hover {
+  background: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+  }
+  body.dark-mode header {
+    background: #1e1e1e;
+  }
+  body.dark-mode footer {
+    background:#1e1e1e;
+  }

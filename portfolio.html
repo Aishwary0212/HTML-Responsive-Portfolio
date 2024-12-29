@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Aishwary Shreykar Singh</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <article>
+        <figure>
+          <img src="https://media.licdn.com/dms/image/v2/D4E35AQEQe-WBf6bYNA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719442380587?e=1736100000&v=beta&t=N1Z_fJh8xzZ5vimnHCM_XIyo_CoUNohTYi-zXFzjydg" alt="Profile Picture">
+          <figcaption>Aishwary Shreykar Singh</figcaption>
+        </figure>
+        <p>Hello! I'm Aishwary, a passionate web developer. I am a newvie in web development and enjoy creating meaningful projects to make a difference. Welcome to my portfolio!</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill">
+        <label for="html">HTML</label>
+        <progress id="html" value="90" max="100"></progress>
+      </div>
+      <div class="skill">
+        <label for="css">CSS</label>
+        <progress id="css" value="85" max="100"></progress>
+      </div>
+      <div class="skill">
+        <label for="javascript">JavaScript</label>
+        <progress id="javascript" value="30" max="100"></progress>
+      </div>
+      
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Technologies: HTML, CSS, JavaScript</p>
+          <a href="https://github.com/Aishwary0212/calculator_first">GitHub</a>
+          <img src="calc.png" alt="Project 1 Thumbnail">
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Technologies: Html, Css, JavaScript</p>
+          <a href="https://github.com/Aishwary0212/web-mini-project">GitHub</a>
+          <img src="mini-project.png" alt="Project 2 Thumbnail">
+        </div>
+        <div class="project">
+          <h3>Project 3</h3>
+          <p>Technologies: Html, Css</p>
+          <a href="https://github.com/Aishwary0212/first-html-project">GitHub</a>
+          <img src="P3.png" alt="Project 3 Thumbnail">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.1918151219343!2d80.18993097487902!3d26.449545279842646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c49fa39cfefaf%3A0x1716805077816869!2sPranveer%20Singh%20Institute%20of%20Technology%2C%20PSIT%20Kanpur!5e0!3m2!1sen!2sin!4v1735490898639!5m2!1sen!2sin" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Your Name. All rights reserved.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/aishwaryshreykarsingh">Instagram</a>
+      <a href="https://linkedin.com/in/aishwary-shreykar-singh">LinkedIn</a>
+      <a href="https://github.com/Aishwary0212">GitHub</a>
+    </div>
+  </footer>
+
+  <button id="back-to-top">&#8679; Back to Top</button>
+</body>
+</html>
